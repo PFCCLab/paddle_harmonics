@@ -51,8 +51,7 @@ include-package-data = false
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["paddle_harmonics"]
-exclude = ["conda*", "docs*", "examples*", "tests*"]
+include = ["paddle_harmonics*"]
 
 [tool.setuptools_scm]
 
