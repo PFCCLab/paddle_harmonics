@@ -197,6 +197,9 @@ def _precompute_convolution_tensor_dense(
     return out
 
 
+@unittest.skip(
+    "Skipping TestDiscreteContinuousConvolution tests for triton and torch are required"
+)
 class TestDiscreteContinuousConvolution(unittest.TestCase):
     def setUp(self):
         if paddle.device.cuda.device_count() >= 1:
